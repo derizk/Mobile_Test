@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.MyApplication">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.MyApplication">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="Login"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>/>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="175dp"
+        android:layout_height="145dp"
+        android:src="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+    </ImageView>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:theme="@style/Theme.AppCompat.DayNight.Dialog"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp">
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:layout_gravity="center"
+            android:layout_marginLeft="0dp">
+        </EditText>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:theme="@style/Theme.AppCompat.DayNight.Dialog"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp">
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_gravity="center"
+            android:layout_marginLeft="0dp"
+            android:inputType="textPassword">
+        </EditText>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/btn_log"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Login">
+    </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or Login With"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+    </TextView>
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="0.5dp"
+        android:background="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="11dp">
+    </View>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@color/black">
+    </ImageButton>
+
+
+</LinearLayout>
